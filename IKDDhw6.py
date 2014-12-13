@@ -66,7 +66,7 @@ def getResult(group,gid):
                 result[i] = result[j]
                 result[j] = tmp
 
-    f = open('cluster'+str(gid)+'.csv','w')
+    f = open('cluster'+str(gid+1)+'.csv','w')
     for r in result:
         f.write(str(r.id+1))
         f.write('\n')
